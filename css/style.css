@@ -6,3 +6,9 @@ a {
 .icon-dark {
   color: #000000;
 }
+
+.slide-img {
+  background-color: #000000;
+  filter: brightness(0.3) ;
+}
+
