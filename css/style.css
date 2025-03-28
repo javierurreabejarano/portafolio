@@ -1,3 +1,6 @@
+body {
+  padding-top: 56px;
+}
 
 a {
   text-decoration: none;
@@ -9,6 +12,159 @@ a {
 
 .slide-img {
   background-color: #000000;
-  filter: brightness(0.3) ;
+  filter: brightness(0.3);
 }
 
+/* menu */
+.bg-nav {
+  background-color: #000D13;
+}
+
+.logo {
+  width: 110px;
+}
+
+/* inicio Banner Principal */
+.fondo {
+  position: relative;
+  background-image: url('../assets/img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+
+.texto {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+:root {
+  --animation-speed: 40s;
+  --slider-width: 960px;
+  --slide-width: 250px;
+  --slider-height: 100px;
+  --gradient-color: rgba(255, 255, 255, 1);
+}
+
+.slider {
+  background: white;
+  height: 150px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  will-change: transform;
+  width: var(--slider-width);
+  height: var(--slider-height);
+}
+
+.slide {
+  width: var(--slide-width);
+  height: var(--slider-height);
+}
+
+.slide-track {
+  animation: scroll var(--animation-speed) linear infinite;
+  display: flex;
+  align-items: center;
+  width: calc(var(--slide-width) * 14);
+}
+
+/* CARD */
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-effect {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo negro con opacidad */
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container:hover .overlay-img {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* END CARD */
+
+/* Style Banner */
+.text-profile p {
+  font-size: 18px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(calc(-250px * 7), 0, 0);
+  }
+}
+
+footer {
+  background-color: #000D13;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-left: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0rem;
+    padding-left: 2rem;
+  }
+}

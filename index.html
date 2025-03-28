@@ -1,231 +1,208 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/9e8416aae5.js" crossorigin="anonymous"></script>
-
-  <title>Document</title>
+  
+  <title>Portafolio | Javier</title>
 </head>
+
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-nav fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">Portafolio de proyectos</a>
-        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand me-auto text-light" href="index.html"><img class="logo" src="assets/img/logo.png" alt="Logo"></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active text-light fw-bold" aria-current="page" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Proyectos</a>
+              <a class="nav-link text-light fw-bold" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Acerca de</a>
+              <a class="nav-link text-light fw-bold" href="#acerca_de">Acerca de</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#">Contácto</a>
+              <a class="nav-link text-light fw-bold" href="#contacto">Contacto</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
         </div>
       </div>
     </nav>
   </header>
   <main>
     <section>
-      <article>
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <article id="inicio">
+        <div class="text-center fondo">
+          <div class="overlay"></div>
+          <div class="texto">
+            <h1>Hola!</h1>
+            <h2>Soy Javier y aquí te presento mi portafolio</h2>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/img/dale_page_slide.jpg" class="d-block w-100 slide-img" alt="Página web dale!">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/gou_pagos_slide.jpg" class="d-block w-100 slide-img" alt="Página web Gou pagos">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Some representative placeholder content for the second slide.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="assets/img/Montevioleta_slide.jpg" class="d-block w-100 slide-img" alt="Página web Montevioleta">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </article>
     </section>
-    <section class="container py-5">
-      <h1 class="text-center">Proyectos Realizados</h1>
-      <article class="row py-5">
-        <div class="col-md-4 pt-3">
-          <div class="card d-flex flex-fill h-100 ">
-              <img src="assets/img/dale_page.jpg" class="card-img-top" alt="Página web dale!">
-              <div class="card-body">
-                  <h5 class="card-title">dale!</h5>
-                  <p class="card-text">Pagina web desarrollada en Drupal, para ver la información del producto, los beneficios d etener una cuenta, promociones del mes, preguntas frecuentes y login</p>
-              </div>
-              <div class="card-footer">
-                  <div class="row">
-                    <div class="col-6">
-                      <h6 class="card-title">Tecnologías</h6>
-                      <i class="fa-brands fa-drupal fa-2x"></i>
-                      <i class="fa-brands fa-bootstrap fa-2x"></i>
-                      <i class="fa-brands fa-css3 fa-2x"></i>
-                    </div>
-                    <div class="col-6">
-                      <h6 class="card-title">Ver</h6>
-                      <a href="">
-                        <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
-                      </a>
-                    </div>
-                  </div>
-              </div>
+
+    <section class="container p-5">
+      <article id="acerca_de">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="card border-0 text-center align-items-center">
+              <img class="w-75 rounded-circle" src="assets/img/foto.webp" alt="Foto de perfil">
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card d-flex flex-fill h-100">
-              <img src="assets/img/gou_pagos.jpg" class="card-img-top" alt="Pagina web gou pagos">
-              <div class="card-body">
-                  <h5 class="card-title">Gou Pagos</h5>
-                  <p class="card-text">Landing page desarrollada en HTML, CSS y JavaScript. Se creo para que tenderos y dueños de negocios conozcan de la nueva pasarela de pagos y puedan registrase a travez de un formulario para obtener más información.</p>
-              </div>
-              <div class="card-footer">
-                  <div class="row">
-                    <div class="col-6">
-                      <h6 class="card-title">Tecnologías</h6>
-                      <i class="fa-brands fa-html5 fa-2x"></i>
-                      <i class="fa-brands fa-css3-alt fa-2x"></i>
-                      <i class="fa-brands fa-square-js fa-2x"></i>
-                    </div>
-                    <div class="col-6">
-                      <h6 class="card-title">Ver</h6>
-                      <a href="">
-                        <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
-                      </a>
-                      <a href="">
-                        <i class="fa-brands fa-github fa-2x icon-dark" title="Git Hub"></i>
-                      </a>
-                    </div>
-                  </div>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card d-flex flex-fill h-100">
-              <img src="assets/img/Montevioleta.jpg" class="card-img-top" alt="Pagina web gou pagos">
-              <div class="card-body">
-                  <h5 class="card-title">Montevioleta</h5>
-                  <p class="card-text">Sitio web Creado en Wordpress con plantilla modificada. Se creo para la inmoviliaria Torortiz para venta de lotes campestres, cuenta con un blog integrado con información para los propirtarios.</p>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <div class="col-6">
-                    <h6 class="card-title">Tecnologías</h6>
-                    <i class="fa-brands fa-wordpress fa-2x"></i>
-                    <i class="fa-brands fa-php fa-2x"></i>
-                  </div>
-                  <div class="col-6">
-                    <h6 class="card-title">Ver</h6>
-                    <a href="">
-                      <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+          <div class="col-12 col-md-6">
+            <div class="py-3 text-center text-md-start text-profile">
+              <h3>Desarrollador Web</h3>
+              <p>Desarrollo de backend y frontend sólidos, escalables y seguros, con excelentes experiencias de usuario.
+              </p>
+              <p>Cinco años de experiencia en desarrollo web en reconocidas empresas de Colombia.</p>
+              <p>Conocimientos en:</p>
+              <ul>
+                <li class="fw-bold">Frontend:</li>
+                <li><i class="fa-brands fa-html5 fa-2x"></i> <i class="fa-brands fa-css3-alt fa-2x"></i> <i
+                    class="fa-brands fa-square-js fa-2x"></i></li>
+                <li class="fw-bold">Backend: </li>
+                <li><i class="fa-brands fa-php fa-2x"></i> <i class="fa-brands fa-python fa-2x"></i> <i
+                    class="fa-brands fa-java fa-2x"></i> <i class="fa-solid fa-database fa-2x"></i></li>
+                <li class="fw-bold">Otros:</li>
+                <li><i class="fa-brands fa-github fa-2x"></i> <i class="fa-brands fa-linux fa-2x"></i></li>
+              </ul>
+            </div>
           </div>
         </div>
       </article>
-      <article class="row pb-5">
-        <div class="col-md-4">
-          <div class="card d-flex flex-fill h-100">
-              <img src="assets/img/dale_page.jpg" class="card-img-top" alt="Página web dale!">
+    </section>
+
+    <section class="container py-5">
+      <article id="proyectos">
+        <h2 class="text-center pb-5">Proyectos Realizados</h2>
+        <div class="row pb-3">
+          <div class="col-md-4 pb-3">
+            <div class="card d-flex flex-fill h-100 mx-2 mx-md-0">
+              <div class="image-container">
+                <a href="proyectosFucs.html">
+                  <img src="assets/img/fucs.jpg" class="card-img-top hover-effect" alt="Página web FUCS">
+                  <div class="overlay-img">
+                    <p class="overlay-text">FUCS</p>
+                  </div>
+                </a>
+              </div>
               <div class="card-body">
-                  <h5 class="card-title">dale!</h5>
-                  <p class="card-text">Pagina web desarrollada en Drupal, para ver la información del producto, los beneficios d etener una cuenta, promociones del mes, preguntas frecuentes y login</p>
+                <h5 class="card-title">FUCS</h5>
+                <p class="card-text">Múltiples aplicaciones para mejorar la productividad de la institución.</p>
               </div>
               <div class="card-footer">
-                  <div class="row">
-                    <div class="col-6">
-                      <h6 class="card-title">Tecnologías</h6>
-                      <i class="fa-brands fa-drupal fa-2x"></i>
-                      <i class="fa-brands fa-bootstrap fa-2x"></i>
-                      <i class="fa-brands fa-css3 fa-2x"></i>
-                    </div>
-                    <div class="col-6">
-                      <h6 class="card-title">Ver</h6>
-                      <a href="">
-                        <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
-                      </a>
-                    </div>
+                <div class="row">
+                  <div class="col-8">
+                    <h6 class="card-title">Tecnologías</h6>
+                    <i class="fa-brands fa-html5 fa-2x"></i>
+                    <i class="fa-brands fa-css3 fa-2x"></i>
+                    <i class="fa-brands fa-js fa-2x"></i>
+                    <i class="fa-brands fa-php fa-2x"></i>
+                    <i class="fa-brands fa-python fa-2x"></i>
                   </div>
+                  <div class="col-4">
+                    <h6 class="card-title">Ver</h6>
+                    <a href="proyectosFucs.html">
+                      <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card d-flex flex-fill h-100">
-              <img src="assets/img/gou_pagos.jpg" class="card-img-top" alt="Pagina web gou pagos">
+          <div class="col-md-4 pb-3">
+            <div class="card d-flex flex-fill h-100 mx-2 mx-md-0">
+              <div class="image-container">
+                <img src="assets/img/dale_page.jpg" class="card-img-top hover-effect" alt="Página web dale!">
+                <div class="overlay-img">
+                  <p class="overlay-text">dale!</p>
+                </div>
+              </div>
               <div class="card-body">
-                  <h5 class="card-title">Gou Pagos</h5>
-                  <p class="card-text">Landing page desarrollada en HTML, CSS y JavaScript. Se creo para que tenderos y dueños de negocios conozcan de la nueva pasarela de pagos y puedan registrase a travez de un formulario para obtener más información.</p>
+                <h5 class="card-title">dale!</h5>
+                <p class="card-text">Página web desarrollada en Drupal para visualizar información del producto, los
+                  beneficios de tener una cuenta, promociones del mes, preguntas frecuentes y acceso a la plataforma.
+                </p>
               </div>
               <div class="card-footer">
-                  <div class="row">
-                    <div class="col-6">
-                      <h6 class="card-title">Tecnologías</h6>
-                      <i class="fa-brands fa-html5 fa-2x"></i>
-                      <i class="fa-brands fa-css3-alt fa-2x"></i>
-                      <i class="fa-brands fa-square-js fa-2x"></i>
-                    </div>
-                    <div class="col-6">
-                      <h6 class="card-title">Ver</h6>
-                      <a href="">
-                        <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
-                      </a>
-                      <a href="">
-                        <i class="fa-brands fa-github fa-2x icon-dark" title="Git Hub"></i>
-                      </a>
-                    </div>
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="card-title">Tecnologías</h6>
+                    <i class="fa-brands fa-drupal fa-2x"></i>
+                    <i class="fa-brands fa-bootstrap fa-2x"></i>
+                    <i class="fa-brands fa-css3 fa-2x"></i>
                   </div>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-4 pb-3">
+            <div class="card d-flex flex-fill h-100 mx-2 mx-md-0">
+              <div class="image-container">
+                <img src="assets/img/gou_pagos.jpg" class="card-img-top hover-effect" alt="Pagina web gou pagos">
+                <div class="overlay-img">
+                  <p class="overlay-text">gou</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Gou Pagos</h5>
+                <p class="card-text">Landing page desarrollada en HTML, CSS y JavaScript. Se creó para que los tenderos
+                  y dueños de negocios conozcan la nueva pasarela de pagos y puedan registrarse a través de un
+                  formulario para obtener más información.</p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="card-title">Tecnologías</h6>
+                    <i class="fa-brands fa-html5 fa-2x"></i>
+                    <i class="fa-brands fa-css3-alt fa-2x"></i>
+                    <i class="fa-brands fa-square-js fa-2x"></i>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="card-title">Ver</h6>
+                    <a href="https://www.goupagos.com.co/lanzamiento" target="_blank">
+                      <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-github fa-2x icon-dark" title="Git Hub"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card d-flex flex-fill h-100">
-              <img src="assets/img/Montevioleta.jpg" class="card-img-top" alt="Pagina web gou pagos">
+        <div class="row">
+          <div class="col-md-4 pb-3">
+            <div class="card d-flex flex-fill h-100 mx-2 mx-md-0">
+              <div class="image-container">
+                <img src="assets/img/Montevioleta.jpg" class="card-img-top hover-effect" alt="Pagina web Montevioleta">
+                <div class="overlay-img">
+                  <p class="overlay-text">Montevioleta</p>
+                </div>
+              </div>
               <div class="card-body">
-                  <h5 class="card-title">Montevioleta</h5>
-                  <p class="card-text">Sitio web Creado en Wordpress con plantilla modificada. Se creo para la inmoviliaria Torortiz para venta de lotes campestres, cuenta con un blog integrado con información para los propirtarios.</p>
+                <h5 class="card-title">Montevioleta</h5>
+                <p class="card-text">Sitio web creado en WordPress con una plantilla modificada. Se desarrolló para la
+                  inmobiliaria Torortiz con el objetivo de promocionar la venta de lotes campestres. Cuenta con un blog
+                  integrado con información para los propietarios.</p>
               </div>
               <div class="card-footer">
                 <div class="row">
@@ -236,34 +213,123 @@
                   </div>
                   <div class="col-6">
                     <h6 class="card-title">Ver</h6>
-                    <a href="">
+                    <a href="https://montevioleta.com/" target="_blank">
                       <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
                     </a>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-4 pb-3">
+            <div class="card d-flex flex-fill h-100 mx-2 mx-md-0">
+              <div class="image-container">
+                <img src="assets/img/Novela_grafica.jpg" class="card-img-top" alt="Página web Novela Gráfica">
+                <div class="overlay-img">
+                  <p class="overlay-text">Novela gráfica</p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Novela Gráfica</h5>
+                <p class="card-text">Página web desarrollada en WooCommerce para la venta de una novela gráfica.</p>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-6">
+                    <h6 class="card-title">Tecnologías</h6>
+                    <i class="fa-brands fa-wordpress fa-2x"></i>
+                    <i class="fa-brands fa-bootstrap fa-2x"></i>
+                    <i class="fa-brands fa-css3 fa-2x"></i>
+                  </div>
+                  <div class="col-6">
+                    <h6 class="card-title">Ver</h6>
+                    <a href="https://novelagrafica.co/" target="_blank">
+                      <i class="fa-solid fa-globe fa-2x icon-dark" title="Sitio Web"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section>
+      <article class="container pb-5" id="experiencia">
+        <h2 class="text-center pb-5">Empresas en las que he trabajado</h2>
+        <div class="slider container">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="assets/img/samsung.png" height="100" width="250" alt="Samsung" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/elFaro.jpg" height="100" width="250" alt="El Faro" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/logospira.png" height="100" width="250" alt="Spira" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/itro" height="100" width="250" alt="Itro" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/adalid.png" height="100" width="250" alt="Adalid" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/ADL LOGO.png" height="100" width="250" alt="ADL" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/logoFucs.jfif" height="100" width="250" alt="FUCS" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/samsung.png" height="100" width="250" alt="Samsung" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/elFaro.jpg" height="100" width="250" alt="El Faro" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/logospira.png" height="100" width="250" alt="Spira" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/itro" height="100" width="250" alt="Itro" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/adalid.png" height="100" width="250" alt="Adalid" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/ADL LOGO.png" height="100" width="250" alt="ADL" />
+            </div>
+            <div class="slide">
+              <img src="assets/img/logoFucs.jfif" height="100" width="250" alt="FUCS" />
+            </div>
           </div>
         </div>
       </article>
     </section>
   </main>
   <footer>
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="container-fluid" id="contacto">
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
         <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+          <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap" />
+            </svg>
           </a>
-          <span class="text-muted">&copy; 2024 Todos los derechos reservados</span>
+          <span class="text-light">© <span id="año-actual"></span> Todos los derechos reservados</span>
         </div>
-    
+
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="#"></svg><i class="fa-brands fa-linkedin fa-2x icon-dark" title="Git Hub"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"></svg><i class="fa-brands fa-github fa-2x icon-dark" title="Git Hub"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="#"></svg></a></li>
+          <li class="ms-3 text-light"><a class="text-light"
+              href="https://www.linkedin.com/in/javier-hernando-urrea-bejarano-02a111197" target="_blank"></svg><i
+                class="fa-brands fa-linkedin fa-2x icon-light" title="LinkedIn"></i></a> LinkedIn</li>
+          <li class="ms-3 text-light"><a class="text-light" href="https://github.com/javierurreabejarano"
+              target="_blank"></svg><i class="fa-brands fa-github fa-2x icon-light" title="GitHub"></i></a> GitHub</li>
         </ul>
-      </footer>
+      </div>
     </div>
   </footer>
+
+  <script src="js/index.js"></script>
 </body>
+
 </html>
